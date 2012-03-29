@@ -18,14 +18,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F8CF43115246D3F00FAD348 /* Exercise Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8CF43115246D3F00FAD348 /* Exercise1.01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise1.01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8CF43515246D3F00FAD348 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F8CF43715246D3F00FAD348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F8CF43915246D3F00FAD348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6F8CF43D15246D3F00FAD348 /* Exercise Prototype-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise Prototype-Info.plist"; sourceTree = "<group>"; };
+		6F8CF43D15246D3F00FAD348 /* Exercise1.01-Info.plist */ = {isa = PBXFileReference; path = "Exercise1.01-Info.plist"; sourceTree = "<group>"; };
 		6F8CF43F15246D3F00FAD348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F8CF44115246D3F00FAD348 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6F8CF44315246D3F00FAD348 /* Exercise Prototype-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise Prototype-Prefix.pch"; sourceTree = "<group>"; };
+		6F8CF44315246D3F00FAD348 /* Exercise1.01-Prefix.pch */ = {isa = PBXFileReference; path = "Exercise1.01-Prefix.pch"; sourceTree = "<group>"; };
 		6F8CF44415246D3F00FAD348 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F8CF44515246D3F00FAD348 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F8CF44815246D3F00FAD348 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		6F8CF43215246D3F00FAD348 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F8CF43115246D3F00FAD348 /* Exercise Prototype.app */,
+				6F8CF43115246D3F00FAD348 /* Exercise1.01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,10 +90,10 @@
 				6F8CF44515246D3F00FAD348 /* AppDelegate.m */,
 				6F8CF44A15246D3F00FAD348 /* ViewController.h */,
 				6F8CF44B15246D3F00FAD348 /* ViewController.m */,
-				6F8CF43D15246D3F00FAD348 /* Exercise Prototype-Info.plist */,
+				6F8CF43D15246D3F00FAD348 /* Exercise1.01-Info.plist */,
 				6F8CF43E15246D3F00FAD348 /* InfoPlist.strings */,
 				6F8CF44115246D3F00FAD348 /* main.m */,
-				6F8CF44315246D3F00FAD348 /* Exercise Prototype-Prefix.pch */,
+				6F8CF44315246D3F00FAD348 /* Exercise1.01-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -101,21 +101,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F8CF43015246D3F00FAD348 /* Exercise Prototype */ = {
+		6F8CF43015246D3F00FAD348 /* Exercise1.01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F8CF44F15246D3F00FAD348 /* Build configuration list for PBXNativeTarget "Exercise Prototype" */;
+			buildConfigurationList = 6F8CF44F15246D3F00FAD348 /* Build configuration list for PBXNativeTarget "Exercise1.01" */;
 			buildPhases = (
 				6F8CF42D15246D3F00FAD348 /* Sources */,
 				6F8CF42E15246D3F00FAD348 /* Frameworks */,
 				6F8CF42F15246D3F00FAD348 /* Resources */,
+				6F8CF4561524797800FAD348 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Exercise Prototype";
+			name = Exercise1.01;
 			productName = "Exercise Prototype";
-			productReference = 6F8CF43115246D3F00FAD348 /* Exercise Prototype.app */;
+			productReference = 6F8CF43115246D3F00FAD348 /* Exercise1.01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +127,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 6F8CF42B15246D3F00FAD348 /* Build configuration list for PBXProject "Exercise Prototype" */;
+			buildConfigurationList = 6F8CF42B15246D3F00FAD348 /* Build configuration list for PBXProject "Exercise1.01" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F8CF43015246D3F00FAD348 /* Exercise Prototype */,
+				6F8CF43015246D3F00FAD348 /* Exercise1.01 */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +155,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F8CF4561524797800FAD348 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ] || [ \"${PLATFORM_NAME}\" == \"ipados\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F8CF42D15246D3F00FAD348 /* Sources */ = {
@@ -194,7 +211,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -219,7 +236,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -237,9 +254,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Exercise Prototype/Exercise Prototype-Prefix.pch";
-				INFOPLIST_FILE = "Exercise Prototype/Exercise Prototype-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Exercise Prototype/Exercise1.01-Prefix.pch";
+				INFOPLIST_FILE = "Exercise Prototype/Exercise1.01-Info.plist";
+				PRODUCT_NAME = Exercise1.01;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -248,9 +265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Exercise Prototype/Exercise Prototype-Prefix.pch";
-				INFOPLIST_FILE = "Exercise Prototype/Exercise Prototype-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Exercise Prototype/Exercise1.01-Prefix.pch";
+				INFOPLIST_FILE = "Exercise Prototype/Exercise1.01-Info.plist";
+				PRODUCT_NAME = Exercise1.01;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -258,7 +275,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F8CF42B15246D3F00FAD348 /* Build configuration list for PBXProject "Exercise Prototype" */ = {
+		6F8CF42B15246D3F00FAD348 /* Build configuration list for PBXProject "Exercise1.01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F8CF44D15246D3F00FAD348 /* Debug */,
@@ -267,7 +284,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F8CF44F15246D3F00FAD348 /* Build configuration list for PBXNativeTarget "Exercise Prototype" */ = {
+		6F8CF44F15246D3F00FAD348 /* Build configuration list for PBXNativeTarget "Exercise1.01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F8CF45015246D3F00FAD348 /* Debug */,
