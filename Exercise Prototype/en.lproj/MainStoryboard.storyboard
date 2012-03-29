@@ -75,7 +75,7 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-71" y="319"/>
+            <point key="canvasLocation" x="-98" y="319"/>
         </scene>
         <scene sceneID="Gcs-n2-Rc5">
             <objects>
@@ -290,7 +290,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-454" y="319"/>
+            <point key="canvasLocation" x="-542" y="327"/>
         </scene>
     </scenes>
     <classes>

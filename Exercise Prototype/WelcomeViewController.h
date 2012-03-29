@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface WelcomeViewController : UIViewController
+
+@property (nonatomic, strong) UIManagedDocument *eDatabase;
 
 @end
