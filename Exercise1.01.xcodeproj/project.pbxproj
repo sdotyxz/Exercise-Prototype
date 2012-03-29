@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F567F591524891400A1DBB2 /* Edata+Update.m */; };
 		6F8CF43615246D3F00FAD348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43515246D3F00FAD348 /* UIKit.framework */; };
 		6F8CF43815246D3F00FAD348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43715246D3F00FAD348 /* Foundation.framework */; };
 		6F8CF43A15246D3F00FAD348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43915246D3F00FAD348 /* CoreGraphics.framework */; };
@@ -15,22 +16,36 @@
 		6F8CF44615246D3F00FAD348 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CF44515246D3F00FAD348 /* AppDelegate.m */; };
 		6F8CF44915246D3F00FAD348 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CF44715246D3F00FAD348 /* MainStoryboard.storyboard */; };
 		6F8CF44C15246D3F00FAD348 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CF44B15246D3F00FAD348 /* ViewController.m */; };
+		6F8CF45D152480A400FAD348 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CF45C152480A400FAD348 /* WelcomeViewController.m */; };
+		6F8CF45F1524860D00FAD348 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF45E1524860D00FAD348 /* CoreData.framework */; };
+		6F8CF4611524861E00FAD348 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF4601524861E00FAD348 /* CoreMotion.framework */; };
+		6F8CF4641524869200FAD348 /* Exercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CF4621524869200FAD348 /* Exercise.xcdatamodeld */; };
+		6FA08F8E152487940064858C /* Edata.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA08F8D152487940064858C /* Edata.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F567F581524891400A1DBB2 /* Edata+Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Edata+Update.h"; sourceTree = "<group>"; };
+		6F567F591524891400A1DBB2 /* Edata+Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Edata+Update.m"; sourceTree = "<group>"; };
 		6F8CF43115246D3F00FAD348 /* Exercise1.01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise1.01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8CF43515246D3F00FAD348 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F8CF43715246D3F00FAD348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F8CF43915246D3F00FAD348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6F8CF43D15246D3F00FAD348 /* Exercise1.01-Info.plist */ = {isa = PBXFileReference; path = "Exercise1.01-Info.plist"; sourceTree = "<group>"; };
+		6F8CF43D15246D3F00FAD348 /* Exercise1.01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise1.01-Info.plist"; sourceTree = "<group>"; };
 		6F8CF43F15246D3F00FAD348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F8CF44115246D3F00FAD348 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6F8CF44315246D3F00FAD348 /* Exercise1.01-Prefix.pch */ = {isa = PBXFileReference; path = "Exercise1.01-Prefix.pch"; sourceTree = "<group>"; };
+		6F8CF44315246D3F00FAD348 /* Exercise1.01-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise1.01-Prefix.pch"; sourceTree = "<group>"; };
 		6F8CF44415246D3F00FAD348 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F8CF44515246D3F00FAD348 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F8CF44815246D3F00FAD348 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6F8CF44A15246D3F00FAD348 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6F8CF44B15246D3F00FAD348 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6F8CF45B152480A400FAD348 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		6F8CF45C152480A400FAD348 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		6F8CF45E1524860D00FAD348 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6F8CF4601524861E00FAD348 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6F8CF4631524869200FAD348 /* Exercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exercise.xcdatamodel; sourceTree = "<group>"; };
+		6FA08F8C152487940064858C /* Edata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edata.h; sourceTree = "<group>"; };
+		6FA08F8D152487940064858C /* Edata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Edata.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8CF4611524861E00FAD348 /* CoreMotion.framework in Frameworks */,
+				6F8CF45F1524860D00FAD348 /* CoreData.framework in Frameworks */,
 				6F8CF43615246D3F00FAD348 /* UIKit.framework in Frameworks */,
 				6F8CF43815246D3F00FAD348 /* Foundation.framework in Frameworks */,
 				6F8CF43A15246D3F00FAD348 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +67,8 @@
 		6F8CF42615246D3F00FAD348 = {
 			isa = PBXGroup;
 			children = (
+				6F8CF4601524861E00FAD348 /* CoreMotion.framework */,
+				6F8CF45E1524860D00FAD348 /* CoreData.framework */,
 				6F8CF43B15246D3F00FAD348 /* Exercise Prototype */,
 				6F8CF43415246D3F00FAD348 /* Frameworks */,
 				6F8CF43215246D3F00FAD348 /* Products */,
@@ -78,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				6F8CF44715246D3F00FAD348 /* MainStoryboard.storyboard */,
+				6F8CF45B152480A400FAD348 /* WelcomeViewController.h */,
+				6F8CF45C152480A400FAD348 /* WelcomeViewController.m */,
+				6FA08F8F152487A90064858C /* DataSource */,
 				6F8CF43C15246D3F00FAD348 /* Supporting Files */,
 			);
 			path = "Exercise Prototype";
@@ -96,6 +118,18 @@
 				6F8CF44315246D3F00FAD348 /* Exercise1.01-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FA08F8F152487A90064858C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6F567F581524891400A1DBB2 /* Edata+Update.h */,
+				6F567F591524891400A1DBB2 /* Edata+Update.m */,
+				6F8CF4621524869200FAD348 /* Exercise.xcdatamodeld */,
+				6FA08F8C152487940064858C /* Edata.h */,
+				6FA08F8D152487940064858C /* Edata.m */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +214,10 @@
 				6F8CF44215246D3F00FAD348 /* main.m in Sources */,
 				6F8CF44615246D3F00FAD348 /* AppDelegate.m in Sources */,
 				6F8CF44C15246D3F00FAD348 /* ViewController.m in Sources */,
+				6F8CF45D152480A400FAD348 /* WelcomeViewController.m in Sources */,
+				6F8CF4641524869200FAD348 /* Exercise.xcdatamodeld in Sources */,
+				6FA08F8E152487940064858C /* Edata.m in Sources */,
+				6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +329,23 @@
 				6F8CF45115246D3F00FAD348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F8CF4621524869200FAD348 /* Exercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F8CF4631524869200FAD348 /* Exercise.xcdatamodel */,
+			);
+			currentVersion = 6F8CF4631524869200FAD348 /* Exercise.xcdatamodel */;
+			name = Exercise.xcdatamodeld;
+			path = ../Exercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6F8CF42815246D3F00FAD348 /* Project object */;
 }

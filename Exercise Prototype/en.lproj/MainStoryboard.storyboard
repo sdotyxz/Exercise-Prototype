@@ -8,7 +8,7 @@
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -16,35 +16,35 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome!!" lineBreakMode="tailTruncation" minimumFontSize="10" id="1TZ-dw-EYY">
                                 <rect key="frame" x="20" y="20" width="280" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your Record" lineBreakMode="tailTruncation" minimumFontSize="10" id="Xdu-XZ-lR7">
-                                <rect key="frame" x="20" y="80" width="134" height="28"/>
+                                <rect key="frame" x="20" y="80" width="280" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dumbbell" lineBreakMode="tailTruncation" minimumFontSize="10" id="mhS-cK-Hao">
-                                <rect key="frame" x="20" y="116" width="280" height="27"/>
+                                <rect key="frame" x="20" y="131" width="280" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Squat Down" lineBreakMode="tailTruncation" minimumFontSize="10" id="dyr-lP-BJ5">
-                                <rect key="frame" x="20" y="151" width="280" height="27"/>
+                                <rect key="frame" x="20" y="186" width="280" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Stretch" lineBreakMode="tailTruncation" minimumFontSize="10" id="2Lh-EY-bY2">
-                                <rect key="frame" x="20" y="186" width="280" height="27"/>
+                                <rect key="frame" x="20" y="244" width="280" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -69,13 +69,13 @@
                     <navigationItem key="navigationItem" title="E Prototype" id="15t-PS-5F3">
                         <barButtonItem key="rightBarButtonItem" title="Login" id="UJM-86-lyB">
                             <connections>
-                                <segue destination="LiE-Dq-pE1" kind="modal" id="rBJ-u2-VcI"/>
+                                <segue destination="LiE-Dq-pE1" kind="modal" modalTransitionStyle="partialCurl" id="rBJ-u2-VcI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-80" y="319"/>
+            <point key="canvasLocation" x="-71" y="319"/>
         </scene>
         <scene sceneID="Gcs-n2-Rc5">
             <objects>
@@ -152,9 +152,29 @@
                     <view key="view" contentMode="scaleToFill" id="Lfh-nI-ZYj">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="qOX-be-WCh">
+                                <rect key="frame" x="221" y="20" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Squat Down" lineBreakMode="tailTruncation" minimumFontSize="10" id="yre-78-GXr">
+                                <rect key="frame" x="20" y="20" width="170" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total = " lineBreakMode="tailTruncation" minimumFontSize="10" id="CgC-SD-fSg">
+                                <rect key="frame" x="20" y="151" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Squat Down" id="G3b-rv-PA8"/>
+                    <navigationItem key="navigationItem" title="E Squat Down" id="G3b-rv-PA8"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="791" y="435"/>
@@ -166,9 +186,29 @@
                     <view key="view" contentMode="scaleToFill" id="Nrg-ad-Vht">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="vEa-FB-fZs">
+                                <rect key="frame" x="221" y="20" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Stretch" lineBreakMode="tailTruncation" minimumFontSize="10" id="sqz-Cx-2Pe">
+                                <rect key="frame" x="20" y="20" width="135" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total = " lineBreakMode="tailTruncation" minimumFontSize="10" id="5dN-ZY-eVO">
+                                <rect key="frame" x="20" y="151" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wPB-sS-hZY"/>
+                    <navigationItem key="navigationItem" title="E Stretch" id="wPB-sS-hZY"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="791" y="1015"/>
@@ -208,6 +248,26 @@
                     <view key="view" contentMode="scaleToFill" id="aHd-PL-I3a">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="sfC-ZR-Ibv">
+                                <rect key="frame" x="221" y="20" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Dumbbell" lineBreakMode="tailTruncation" minimumFontSize="10" id="Nhw-AK-qIW">
+                                <rect key="frame" x="20" y="20" width="141" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total = " lineBreakMode="tailTruncation" minimumFontSize="10" id="i7n-jG-aXK">
+                                <rect key="frame" x="20" y="151" width="280" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="E Dumbbell" id="SjA-qg-bZj"/>
@@ -230,9 +290,14 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-429" y="313"/>
+            <point key="canvasLocation" x="-454" y="319"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="WelcomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
