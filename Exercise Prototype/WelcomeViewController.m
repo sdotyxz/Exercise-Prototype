@@ -7,14 +7,53 @@
 //
 
 #import "WelcomeViewController.h"
+#import "LoginViewController.h"
+#import "Edata+Update.h"
+#import "User.h"
+
+@interface WelcomeViewController() <LoginDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dumbbellLabel;
+@property (weak, nonatomic) IBOutlet UILabel *squatdownLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stretchLabel;
+
+@end
 
 @implementation WelcomeViewController
 
+@synthesize usernameLabel = _usernameLabel;
+@synthesize dumbbellLabel = _dumbbellLabel;
+@synthesize squatdownLabel = _squatdownLabel;
+@synthesize stretchLabel = _stretchLabel;
+
 @synthesize eDatabase = _eDatabase;
 
+
+#pragma mark - Modal View Controller
+
+// prepare for the modal view controller
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"login"]) {
+        LoginViewController *user = (LoginViewController *)segue.destinationViewController;
+        user.delegate = self;
+    }
+}
+
+// refresh the WelcomePage
+
+- (void)refreshWelcome:(Edata *)userInfo
+{
+    self.usernameLabel.text = [NSString stringWithFormat:@"Welcome!! %@", userInfo.username];
+    self.dumbbellLabel.text = [NSString stringWithFormat:@"Dumbbell %@", userInfo.dumbbell];
+    self.squatdownLabel.text = [NSString stringWithFormat:@"Squat Down %@", userInfo.squatdown];
+    self.stretchLabel.text = [NSString stringWithFormat:@"Stretch %@", userInfo.stretch];
+}
+
+
 #pragma mark - Database Usage
-
-
 
 // 3. Open or create the document here
 // We modify one which is much more generate                                                                                                       
@@ -37,6 +76,22 @@
     }
 }
 
+- (Edata *)chechDatabase:(UIManagedDocument *)database with:(NSString *)name
+{
+    Edata *checkResult;
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Edata"];
+    request.predicate = [NSPredicate predicateWithFormat:@"username = %@", name];
+    
+    NSError *error = nil;
+    NSArray *result = [database.managedObjectContext executeFetchRequest:request error:&error];
+    
+    checkResult = [result lastObject];
+    return checkResult;
+}
+
+
+
 #pragma mark - Setter
 
 // 2.Init our database
@@ -49,6 +104,26 @@
     }
 }
 
+#pragma mark - Delegate
+
+- (void)LoginController:(LoginViewController *)sender LoginUser:(NSString *)username
+{
+    Edata *login = [self chechDatabase:self.eDatabase with:username];
+    if (!login) {
+        // add a new user into the database with username which was entered by the user 
+        // and refresh the welcome page 
+        NSDictionary *initInfo = [User formatUserInfo:username 
+                                        dumbbellTimes:[NSNumber numberWithInt:0] 
+                                       squatdownTimes:[NSNumber numberWithInt:0]  
+                                         stretchTimes:[NSNumber numberWithInt:0]];
+        login = [Edata dataWithuserInfo:initInfo inManagedObjectContext:self.eDatabase.managedObjectContext];
+        [self refreshWelcome:login];
+    } else {
+        // refresh the welcome page with the user data
+        [self refreshWelcome:login];
+    }
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 
 #pragma mark - View Controller LifeCycle
@@ -70,4 +145,11 @@
 }
 
 
+- (void)viewDidUnload {
+    [self setDumbbellLabel:nil];
+    [self setUsernameLabel:nil];
+    [self setSquatdownLabel:nil];
+    [self setStretchLabel:nil];
+    [super viewDidUnload];
+}
 @end

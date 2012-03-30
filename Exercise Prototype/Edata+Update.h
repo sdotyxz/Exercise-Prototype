@@ -10,4 +10,7 @@
 
 @interface Edata (Update)
 
++ (Edata *)dataWithuserInfo:(NSDictionary *)userInfo
+     inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

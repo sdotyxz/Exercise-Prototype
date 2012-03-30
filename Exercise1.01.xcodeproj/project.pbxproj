@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F567F591524891400A1DBB2 /* Edata+Update.m */; };
+		6F7B1752152531B10054D456 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B1751152531B10054D456 /* LoginViewController.m */; };
+		6F7B175915253A9A0054D456 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B175815253A9A0054D456 /* User.m */; };
 		6F8CF43615246D3F00FAD348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43515246D3F00FAD348 /* UIKit.framework */; };
 		6F8CF43815246D3F00FAD348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43715246D3F00FAD348 /* Foundation.framework */; };
 		6F8CF43A15246D3F00FAD348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43915246D3F00FAD348 /* CoreGraphics.framework */; };
@@ -26,6 +28,10 @@
 /* Begin PBXFileReference section */
 		6F567F581524891400A1DBB2 /* Edata+Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Edata+Update.h"; sourceTree = "<group>"; };
 		6F567F591524891400A1DBB2 /* Edata+Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Edata+Update.m"; sourceTree = "<group>"; };
+		6F7B1750152531B10054D456 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6F7B1751152531B10054D456 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6F7B175715253A9A0054D456 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		6F7B175815253A9A0054D456 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6F8CF43115246D3F00FAD348 /* Exercise1.01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise1.01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8CF43515246D3F00FAD348 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F8CF43715246D3F00FAD348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,8 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				6F8CF44715246D3F00FAD348 /* MainStoryboard.storyboard */,
+				6F7B1750152531B10054D456 /* LoginViewController.h */,
+				6F7B1751152531B10054D456 /* LoginViewController.m */,
 				6F8CF45B152480A400FAD348 /* WelcomeViewController.h */,
 				6F8CF45C152480A400FAD348 /* WelcomeViewController.m */,
+				6F7B175715253A9A0054D456 /* User.h */,
+				6F7B175815253A9A0054D456 /* User.m */,
 				6FA08F8F152487A90064858C /* DataSource */,
 				6F8CF43C15246D3F00FAD348 /* Supporting Files */,
 			);
@@ -218,6 +228,8 @@
 				6F8CF4641524869200FAD348 /* Exercise.xcdatamodeld in Sources */,
 				6FA08F8E152487940064858C /* Edata.m in Sources */,
 				6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */,
+				6F7B1752152531B10054D456 /* LoginViewController.m in Sources */,
+				6F7B175915253A9A0054D456 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
