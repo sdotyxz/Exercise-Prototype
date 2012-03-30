@@ -60,13 +60,18 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WwK-6W-a5i" kind="push" id="6Gp-pp-41O"/>
+                                    <segue destination="WwK-6W-a5i" kind="push" identifier="modeChange" id="6Gp-pp-41O"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="E Prototype" id="15t-PS-5F3">
+                        <barButtonItem key="leftBarButtonItem" title="Reset Record" id="Czh-bP-Gmk">
+                            <connections>
+                                <action selector="reset:" destination="2" id="zZY-Lm-m4W"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Login" id="UJM-86-lyB">
                             <connections>
                                 <segue destination="LiE-Dq-pE1" kind="modal" identifier="login" modalTransitionStyle="partialCurl" id="rBJ-u2-VcI"/>
@@ -86,7 +91,7 @@
         <scene sceneID="Gcs-n2-Rc5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IU-HD-F4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="WwK-6W-a5i" sceneMemberID="viewController">
+                <viewController id="WwK-6W-a5i" customClass="EModeChooseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mvc-UG-y90">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,7 +115,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nvU-5x-ybW" kind="push" id="aJz-Cx-CL9"/>
+                                    <segue destination="nvU-5x-ybW" kind="push" identifier="doDumbbell" id="aJz-Cx-CL9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NHB-at-4v7">
@@ -125,7 +130,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y6s-4H-KRy" kind="push" id="MJ6-pK-bSL"/>
+                                    <segue destination="Y6s-4H-KRy" kind="push" identifier="doSquatdown" id="MJ6-pK-bSL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Myh-e5-t4Y">
@@ -140,7 +145,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LF6-Ra-mCR" kind="push" id="YdZ-Lq-P3i"/>
+                                    <segue destination="LF6-Ra-mCR" kind="push" identifier="doStretch" id="YdZ-Lq-P3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,7 +159,7 @@
         <scene sceneID="1fr-7Y-xMg">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL9-es-kYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Y6s-4H-KRy" sceneMemberID="viewController">
+                <viewController id="Y6s-4H-KRy" customClass="SquatdownViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lfh-nI-ZYj">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -162,6 +167,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="qOX-be-WCh">
                                 <rect key="frame" x="221" y="20" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch:" destination="Y6s-4H-KRy" eventType="valueChanged" id="Bgy-Fi-gOx"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Squat Down" lineBreakMode="tailTruncation" minimumFontSize="10" id="yre-78-GXr">
                                 <rect key="frame" x="20" y="20" width="170" height="29"/>
@@ -181,6 +189,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="E Squat Down" id="G3b-rv-PA8"/>
+                    <connections>
+                        <outlet property="showTimesLabel" destination="CgC-SD-fSg" id="Sw8-Z6-sK6"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="791" y="435"/>
@@ -188,7 +199,7 @@
         <scene sceneID="Ngb-xx-mr7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ve2-CB-D4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="LF6-Ra-mCR" sceneMemberID="viewController">
+                <viewController id="LF6-Ra-mCR" customClass="StretchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nrg-ad-Vht">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,6 +207,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="vEa-FB-fZs">
                                 <rect key="frame" x="221" y="20" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch:" destination="LF6-Ra-mCR" eventType="valueChanged" id="2VL-HQ-8WG"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Stretch" lineBreakMode="tailTruncation" minimumFontSize="10" id="sqz-Cx-2Pe">
                                 <rect key="frame" x="20" y="20" width="135" height="27"/>
@@ -215,6 +229,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="E Stretch" id="wPB-sS-hZY"/>
+                    <connections>
+                        <outlet property="showTimesLabel" destination="5dN-ZY-eVO" id="TeC-Mj-RDu"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="791" y="1015"/>
@@ -253,7 +270,7 @@
         <scene sceneID="vwi-8n-yGI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEB-ad-1v6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="nvU-5x-ybW" sceneMemberID="viewController">
+                <viewController id="nvU-5x-ybW" customClass="DumbbellViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHd-PL-I3a">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -261,6 +278,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="sfC-ZR-Ibv">
                                 <rect key="frame" x="221" y="20" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch:" destination="nvU-5x-ybW" eventType="valueChanged" id="fSy-Ls-QyY"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Do Dumbbell" lineBreakMode="tailTruncation" minimumFontSize="10" id="Nhw-AK-qIW">
                                 <rect key="frame" x="20" y="20" width="141" height="29"/>
@@ -280,6 +300,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="E Dumbbell" id="SjA-qg-bZj"/>
+                    <connections>
+                        <outlet property="showTimesLabel" destination="i7n-jG-aXK" id="T3G-0c-62Z"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="791" y="-133"/>
@@ -303,10 +326,31 @@
         </scene>
     </scenes>
     <classes>
+        <class className="DumbbellViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DumbbellViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="showTimesLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EModeChooseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EModeChooseViewController.h"/>
+        </class>
         <class className="LoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="usernameTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SquatdownViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SquatdownViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="showTimesLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="StretchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StretchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="showTimesLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="WelcomeViewController" superclassName="UIViewController">

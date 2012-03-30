@@ -10,13 +10,16 @@
 #import "LoginViewController.h"
 #import "Edata+Update.h"
 #import "User.h"
+#import "EModeChooseViewController.h"
 
-@interface WelcomeViewController() <LoginDelegate>
+@interface WelcomeViewController() <LoginDelegate, EModeChooseDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dumbbellLabel;
 @property (weak, nonatomic) IBOutlet UILabel *squatdownLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stretchLabel;
+
+@property (nonatomic, strong) NSString *userName;
 
 @end
 
@@ -27,6 +30,7 @@
 @synthesize squatdownLabel = _squatdownLabel;
 @synthesize stretchLabel = _stretchLabel;
 
+@synthesize  userName = _userName;
 @synthesize eDatabase = _eDatabase;
 
 
@@ -39,6 +43,10 @@
     if ([segue.identifier isEqualToString:@"login"]) {
         LoginViewController *user = (LoginViewController *)segue.destinationViewController;
         user.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"modeChange"]) {  
+        EModeChooseViewController *user = (EModeChooseViewController *)segue.destinationViewController;
+        user.delegate = self;
+        user.userName = self.userName;
     }
 }
 
@@ -90,6 +98,17 @@
     return checkResult;
 }
 
+- (IBAction)reset:(id)sender 
+{
+    Edata *data = [self chechDatabase:self.eDatabase with:self.userName];
+    [self.eDatabase.managedObjectContext deleteObject:data];
+    NSDictionary *initInfo = [User formatUserInfo:self.userName 
+                                    dumbbellTimes:nil
+                                   squatdownTimes:nil  
+                                     stretchTimes:nil];
+    data = [Edata dataWithuserInfo:initInfo inManagedObjectContext:self.eDatabase.managedObjectContext];
+    [self refreshWelcome:data];
+}
 
 
 #pragma mark - Setter
@@ -113,18 +132,27 @@
         // add a new user into the database with username which was entered by the user 
         // and refresh the welcome page 
         NSDictionary *initInfo = [User formatUserInfo:username 
-                                        dumbbellTimes:[NSNumber numberWithInt:0] 
-                                       squatdownTimes:[NSNumber numberWithInt:0]  
-                                         stretchTimes:[NSNumber numberWithInt:0]];
+                                        dumbbellTimes:nil
+                                       squatdownTimes:nil  
+                                         stretchTimes:nil];
         login = [Edata dataWithuserInfo:initInfo inManagedObjectContext:self.eDatabase.managedObjectContext];
         [self refreshWelcome:login];
     } else {
         // refresh the welcome page with the user data
         [self refreshWelcome:login];
     }
+    self.userName = login.username;
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (void)EModeChooseController:(EModeChooseViewController *)sender feedbackUserRecord:(NSDictionary *)record
+{
+    [Edata dataWithuserInfo:record inManagedObjectContext:self.eDatabase.managedObjectContext];
+    Edata *feedbackInfo = [self chechDatabase:self.eDatabase with:[record objectForKey:USER_NAME]];
+    if (self.view.window) {
+        [self refreshWelcome:feedbackInfo];
+    }
+}
 
 #pragma mark - View Controller LifeCycle
 

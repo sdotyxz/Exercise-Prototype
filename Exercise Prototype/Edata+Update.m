@@ -27,14 +27,14 @@
         
         data = [NSEntityDescription insertNewObjectForEntityForName:@"Edata" inManagedObjectContext:context];
         data.username = [userInfo objectForKey:USER_NAME];
-        data.dumbbell = [userInfo objectForKey:USER_DUMBBELL];
-        data.squatdown = [userInfo objectForKey:USER_SQUATDOWN];
-        data.stretch = [userInfo objectForKey:USER_STRETCH];
+        data.dumbbell = [NSNumber numberWithInt:[[userInfo objectForKey:USER_DUMBBELL] intValue]];
+        data.squatdown = [NSNumber numberWithInt:[[userInfo objectForKey:USER_SQUATDOWN] intValue]];
+        data.stretch = [NSNumber numberWithInt:[[userInfo objectForKey:USER_STRETCH] intValue]];
         
         NSLog(@"insert into the dataBase");
     } else {
-        
-        data.dumbbell =[NSNumber numberWithInt:[data.dumbbell intValue] + [[userInfo objectForKey:USER_DUMBBELL] intValue]];
+        data = [matches lastObject];
+        data.dumbbell = [NSNumber numberWithInt:[data.dumbbell intValue] + [[userInfo objectForKey:USER_DUMBBELL] intValue]];
         data.squatdown =[NSNumber numberWithInt:[data.squatdown intValue] + [[userInfo objectForKey:USER_SQUATDOWN] intValue]];
         data.stretch =[NSNumber numberWithInt:[data.stretch intValue] + [[userInfo objectForKey:USER_STRETCH] intValue]];
         

@@ -10,6 +10,11 @@
 		6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F567F591524891400A1DBB2 /* Edata+Update.m */; };
 		6F7B1752152531B10054D456 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B1751152531B10054D456 /* LoginViewController.m */; };
 		6F7B175915253A9A0054D456 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B175815253A9A0054D456 /* User.m */; };
+		6F7B178F152548790054D456 /* EModeChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B178E152548790054D456 /* EModeChooseViewController.m */; };
+		6F7B1797152549A80054D456 /* DumbbellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B1796152549A80054D456 /* DumbbellViewController.m */; };
+		6F7B179E15254A1A0054D456 /* CMMotionManager+Shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B179D15254A1A0054D456 /* CMMotionManager+Shared.m */; };
+		6F7B17A115254E3E0054D456 /* SquatdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B17A015254E3E0054D456 /* SquatdownViewController.m */; };
+		6F7B17A4152555B40054D456 /* StretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B17A3152555B40054D456 /* StretchViewController.m */; };
 		6F8CF43615246D3F00FAD348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43515246D3F00FAD348 /* UIKit.framework */; };
 		6F8CF43815246D3F00FAD348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43715246D3F00FAD348 /* Foundation.framework */; };
 		6F8CF43A15246D3F00FAD348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CF43915246D3F00FAD348 /* CoreGraphics.framework */; };
@@ -32,6 +37,16 @@
 		6F7B1751152531B10054D456 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6F7B175715253A9A0054D456 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		6F7B175815253A9A0054D456 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		6F7B178D152548790054D456 /* EModeChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EModeChooseViewController.h; sourceTree = "<group>"; };
+		6F7B178E152548790054D456 /* EModeChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EModeChooseViewController.m; sourceTree = "<group>"; };
+		6F7B1795152549A80054D456 /* DumbbellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumbbellViewController.h; sourceTree = "<group>"; };
+		6F7B1796152549A80054D456 /* DumbbellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DumbbellViewController.m; sourceTree = "<group>"; };
+		6F7B179C15254A1A0054D456 /* CMMotionManager+Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionManager+Shared.h"; sourceTree = "<group>"; };
+		6F7B179D15254A1A0054D456 /* CMMotionManager+Shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionManager+Shared.m"; sourceTree = "<group>"; };
+		6F7B179F15254E3E0054D456 /* SquatdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquatdownViewController.h; sourceTree = "<group>"; };
+		6F7B17A015254E3E0054D456 /* SquatdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquatdownViewController.m; sourceTree = "<group>"; };
+		6F7B17A2152555B40054D456 /* StretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchViewController.h; sourceTree = "<group>"; };
+		6F7B17A3152555B40054D456 /* StretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchViewController.m; sourceTree = "<group>"; };
 		6F8CF43115246D3F00FAD348 /* Exercise1.01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise1.01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8CF43515246D3F00FAD348 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F8CF43715246D3F00FAD348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F7B17911525492C0054D456 /* ExerciseMode */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B1795152549A80054D456 /* DumbbellViewController.h */,
+				6F7B1796152549A80054D456 /* DumbbellViewController.m */,
+				6F7B179F15254E3E0054D456 /* SquatdownViewController.h */,
+				6F7B17A015254E3E0054D456 /* SquatdownViewController.m */,
+				6F7B17A2152555B40054D456 /* StretchViewController.h */,
+				6F7B17A3152555B40054D456 /* StretchViewController.m */,
+				6F7B179C15254A1A0054D456 /* CMMotionManager+Shared.h */,
+				6F7B179D15254A1A0054D456 /* CMMotionManager+Shared.m */,
+			);
+			name = ExerciseMode;
+			sourceTree = "<group>";
+		};
 		6F8CF42615246D3F00FAD348 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +133,15 @@
 			isa = PBXGroup;
 			children = (
 				6F8CF44715246D3F00FAD348 /* MainStoryboard.storyboard */,
+				6F7B178D152548790054D456 /* EModeChooseViewController.h */,
+				6F7B178E152548790054D456 /* EModeChooseViewController.m */,
 				6F7B1750152531B10054D456 /* LoginViewController.h */,
 				6F7B1751152531B10054D456 /* LoginViewController.m */,
 				6F8CF45B152480A400FAD348 /* WelcomeViewController.h */,
 				6F8CF45C152480A400FAD348 /* WelcomeViewController.m */,
 				6F7B175715253A9A0054D456 /* User.h */,
 				6F7B175815253A9A0054D456 /* User.m */,
+				6F7B17911525492C0054D456 /* ExerciseMode */,
 				6FA08F8F152487A90064858C /* DataSource */,
 				6F8CF43C15246D3F00FAD348 /* Supporting Files */,
 			);
@@ -230,6 +263,11 @@
 				6F567F5A1524891400A1DBB2 /* Edata+Update.m in Sources */,
 				6F7B1752152531B10054D456 /* LoginViewController.m in Sources */,
 				6F7B175915253A9A0054D456 /* User.m in Sources */,
+				6F7B178F152548790054D456 /* EModeChooseViewController.m in Sources */,
+				6F7B1797152549A80054D456 /* DumbbellViewController.m in Sources */,
+				6F7B179E15254A1A0054D456 /* CMMotionManager+Shared.m in Sources */,
+				6F7B17A115254E3E0054D456 /* SquatdownViewController.m in Sources */,
+				6F7B17A4152555B40054D456 /* StretchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
